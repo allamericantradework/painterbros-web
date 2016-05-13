@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    {{> header title="All American TradeWork | Home" }}
+  </head>
+
+  <body class="body">
+
+    {{> navbar active='contact' }}
+    {{> jumbotron title='CONTACT' }}
+    {{> logo-banner }}
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-12">
+              <h4>Salt Lake and Utah County Area <small>Zach Tanner</small></h4>
+              <address>
+                <abbr title="Phone">P:</abbr> (385) 204-3890
+              </address>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <h4>Southern Oregon Area <small>Darren Cossette</small></h4>
+              <address>
+                <abbr title="Phone">P:</abbr> (385) 204-3890
+              </address>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <a href="locations.html">More locations info</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h4>Contact us today</h4>
+          <div id="success-alert" class="alert alert-success" style="display: none;" role="alert">
+            Your form has submitted! We will contact you shortly.
+          </div>
+          <div id="error-alert" class="alert alert-danger" style="display: none;" role="alert">
+            An error occurred somewhere on the internet! <strong>Sorry!</strong> Please email Zach at
+            <a id="mailto-link" href="mailto:zach@allamericantradework.com" target="_top">zach@allamericantradework.com</a>
+            with your details and he will get back to you forthwith.
+          </div>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name-input">Name:</label>
+              <input type="text" id="name-input" class="form-control" placeholder="name here..." />
+            </div>
+            <div class="form-group">
+              <label for="email-input">Email:</label>
+              <input type="email" id="email-input" class="form-control" placeholder="email here..."/>
+            </div>
+            <div class="form-group">
+              <label for="description-input">How can we help you?</label>
+              <textarea id="description-input" class="form-control" rows="3" placeholder="tell us..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    {{> footer }}
+    <script src="js/form.js"></script>
+  </body>
+</html>

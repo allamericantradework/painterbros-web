@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.tern-port
+.DS_STORE
+npm-debug.log
+.env

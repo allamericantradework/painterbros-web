@@ -1,0 +1,197 @@
+body {
+    font-size: 12pt;
+    color: #293a46;
+}
+
+dd {
+    margin-bottom: 10px;
+}
+
+/* Disable Bootstrap rounded corners on buttons and form elements */
+.form-control, .btn {
+    border-radius: 3px;
+}
+
+/* Custom Theme for NavBar */
+nav.navbar {
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 0;
+    background-color: #3097d1;
+    border: 1px solid transparent;
+    border-color: #1c73a5;
+    border-width: 0 0 1px;
+    margin: 0;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-brand {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #293a46;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #293a46;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #3F7BA5;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #293a46;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #eeeeee;
+    background-color: #267AA9;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: rgba(255, 255, 255, 0.8);
+  }
+}
+
+.contact {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    max-width: 50%;
+}
+
+.logo-subtitle {
+    color: red;
+    text-align: center;
+    font-style: italic;
+    margin: 0;
+}
+
+.carousel {
+    min-height: 30%;
+}
+.carousel-caption {
+    top: 0;
+    left: 15%;
+    right: 15%;
+}
+
+.carousel-caption-content {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 3px;
+    padding: 30px;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption-content {
+        padding: 0 5px 0 5px;
+    }
+    .carousel-caption {
+        padding: 0 5px 0 5px;
+    }
+    .logo-title {
+        font-size: 25px;
+    }
+    .logo-subtitle {
+        margin-bottom: 20px;
+    }
+    .logo-contact {
+        padding-top: 20px;
+        border-top: 1px solid #cdcdcd;
+        text-align: center;
+    }
+}
+
+.logo-contact {
+    margin-top: 10px;
+}
+
+.logo-title {
+    text-align: center;
+}
+
+.jumbotron {
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+}
+
+.jumbo-heading {
+    background-color: rgba(0,0,0,.5);
+    border-radius: 5px;
+    color: white;
+    max-width: 30%;
+    min-width: 300px;
+    padding: 20px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+}
+
+.footer {
+    margin-top: 40px;
+    padding: 20px;
+    color: #efefef;
+    background-color: #777777;
+}
+
+.footer a {
+    color: #73B0D2;
+}
+
+iframe {
+    background-color: #3097d1;
+    border: 1px solid #cdcdcd;
+}
+
+/* Social Icons */
+.social-icons {
+    font-size: 22px;
+}
+
+.social-icons a, .social-icons a:hover, .social-icons a:active {
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.facebook {color: #6597CC;}
+.gplus {color: #a32929;}
+.instagram {color: #d5b120;}
+.facebook:hover, .gplus:hover, .instagram:hover {color: #cdcdcd;}
+
+/* Make navbar collapse earlier to handle iPads */
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}

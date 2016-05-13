@@ -1,0 +1,50 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/index.html">All American Trade Work</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li role="presentation" class="{{#ifEq active 'home'}}active{{/ifEq}}">
+          <a class="nav-link" href="index.html"> Home </a>
+        </li>
+        <li role="presentation" class="{{#ifEq active 'about-us'}}active{{/ifEq}}">
+          <a class="nav-link" href="about-us.html"> About Us </a>
+        </li>
+        <li role="presentation" class="{{#ifEq active 'services'}}active{{/ifEq}}">
+          <a class="nav-link" href="services.html"> Services </a>
+        </li>
+        <li role="presentation" class="{{#ifEq active 'gallery'}}active{{/ifEq}}">
+          <a class="nav-link" href="gallery.html"> Gallery </a>
+        </li>
+
+        <li role="presentation button" class="{{#ifEq active 'locations'}}active{{/ifEq}} dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-exapnded="false" href="locations.html"> Locations <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdowntext" href="/locations.html#UtahOffices"> Utah Offices </a></li>
+            <li><a class="dropdowntext" href="/locations.html#OregonOffices"> Oregon Offices </a></li>
+          </ul>
+        </li>
+
+        <li role="presentation" class="{{#ifEq active 'testimonials'}}active{{/ifEq}}">
+          <a class="nav-link" href="testimonials.html"> Testimonials </a>
+        </li>
+        <li role="presentation">
+          <a class="nav-link" href="https://allamericantradework.wordpress.com" target="_blank"> Blog </a>
+        </li>
+        <li role="presentation" class="{{#ifEq active 'contact'}}active{{/ifEq}}">
+          <a class="nav-link" href="contact.html"> Contact </a>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

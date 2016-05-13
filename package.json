@@ -1,0 +1,25 @@
+{
+  "name": "aatw",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "node build.js",
+    "deploy": "echo 'not ready'",
+    "watch": "node build.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allamericantradework/allamericantradework.com.git"
+  },
+  "author": "tgroshon",
+  "bugs": {
+    "url": "https://github.com/allamericantradework/allamericantradework.com/issues"
+  },
+  "homepage": "https://github.com/allamericantradework/allamericantradework.com#readme",
+  "dependencies": {
+    "fs-extra": "^0.26.7",
+    "handlebars": "^4.0.5",
+    "lodash.debounce": "^4.0.3",
+    "minimist": "^1.2.0",
+    "street": "^0.7.1"
+  }
+}
