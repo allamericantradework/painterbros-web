@@ -1,4 +1,4 @@
-body {
+- body {
   font-size: 12pt;
   color: #293a46;
 }
@@ -18,7 +18,7 @@ dd {
 
 /* Custom Theme for NavBar */
 nav.navbar {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgb(255, 255, 255);
   border-radius: 0;
   background-color: #3097d1;
   border: 1px solid transparent;
@@ -29,7 +29,7 @@ nav.navbar {
 
 .navbar-default .navbar-nav > li > a,
 .navbar-default .navbar-brand {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgb(255, 255, 255);
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -60,67 +60,43 @@ nav.navbar {
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgb(255, 255, 255);
   }
-}
-
-.contact {
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .skills-list {
   max-width: 50%;
 }
 
-.logo-subtitle {
-  color: red;
-  text-align: center;
-  font-style: italic;
-  margin: 0;
-}
-
 .hero-image {
   width: 100%;
 }
 
-@media (max-width: 768px) {
-  .logo-title {
-    font-size: 25px;
-  }
-  .logo-subtitle {
-    margin-bottom: 20px;
-  }
-  .logo-contact {
-    padding-top: 20px;
-    border-top: 1px solid #cdcdcd;
-    text-align: center;
-  }
-}
 
-.logo-contact {
-  margin-top: 10px;
-}
-
-.logo-title {
-  text-align: center;
-}
 
 .jumbotron {
+  margin-bottom: 0;
+  background-color: #ffffff;
+}
+
+.welcome-box {
+  position: absolute;
+  top: 100px;
+  right: 10%;
+  background-color: rgba(0,0,0,0.3);
+  padding: 20px;
+  color: #ffffff;
+  font-size: 20pt;
+  max-width: 30%;
+  min-width: 235px;
+}
+
+.header {
   background-image: url('../img/banner.jpg');
   background-size: cover;
   background-position: bottom;
-  height: 250px;
-}
-
-.jumbo-heading {
-  background-color: rgba(0,0,0,.5);
-  border-radius: 5px;
-  color: white;
-  max-width: 30%;
-  min-width: 300px;
-  padding: 20px;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  margin-bottom: 10px;
+  height: 300px;
 }
 
 .footer {
@@ -144,10 +120,12 @@ iframe {
   font-size: 22px;
 }
 
-.social-icons a, .social-icons a:hover, .social-icons a:active {
-                                          text-decoration: none;
-                                          font-weight: bolder;
-                                        }
+.social-icons a,
+.social-icons a:hover,
+.social-icons a:active {
+  text-decoration: none;
+  font-weight: bolder;
+}
 
 .facebook {color: #6597CC;}
 .gplus {color: #a32929;}
