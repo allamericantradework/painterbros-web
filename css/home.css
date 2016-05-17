@@ -72,19 +72,21 @@ nav.navbar {
   width: 100%;
 }
 
-
-
 .jumbotron {
   margin-bottom: 0;
   background-color: #ffffff;
 }
+.welcome-banner {
+  position: relative;
+}
 
 .welcome-box {
   position: absolute;
-  top: 100px;
+  z-index: 10;
+  top: 50px;
   right: 10%;
   background-color: rgba(0,0,0,0.3);
-  padding: 20px;
+  padding: 15px;
   color: #ffffff;
   font-size: 20pt;
   max-width: 30%;
