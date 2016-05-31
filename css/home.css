@@ -101,6 +101,15 @@ nav.navbar {
   height: 300px;
 }
 
+.locations-header {
+  background-image: url('../img/downtown-SLC-night.jpg');
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+  height: 300px;
+    
+}
+
 .footer {
   margin-top: 40px;
   padding: 20px;
