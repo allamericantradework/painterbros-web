@@ -7,6 +7,10 @@ dd {
   margin-bottom: 10px;
 }
 
+.badge-row {
+  margin-bottom: 30px;
+}
+
 /* Disable Bootstrap rounded corners on buttons and form elements */
 .form-control, .btn {
   border-radius: 3px;
