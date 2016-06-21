@@ -36,7 +36,7 @@ $('#contact-form').submit(function (event) {
  * need to re-enter everything.
  */
 function populateMailtoLink (name, description) {
-  var recipient = 'zach@allamericantradework.com'
+  var recipient = 'info@painterbros.com'
   var hrefParts = [
     'subject=' + encodeURIComponent('Website Referral: ' + name),
     'body=' + encodeURIComponent(description)
