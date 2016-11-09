@@ -64,6 +64,11 @@ function copyCSSFile (filename) {
   fs.copy(path.join(CSS_DIR, filename), path.join(OUT_DIR, CSS_DIR, filename))
 }
 
+function copyJSFile (filename) {
+  console.log('Updating JS', filename)
+  fs.copy(path.join(JS_DIR, filename), path.join(OUT_DIR, JS_DIR, filename))
+}
+
 // Where the magic happens
 function main () {
   fs.removeSync(OUT_DIR)
@@ -87,6 +92,7 @@ function main () {
   var debouncedPageBuild = debounce(incrementalPageBuild, WAIT_TIME)
   var debouncedPartialBuild = debounce(incrementalPartialBuild, WAIT_TIME)
   var debouncedCSSCopy = debounce(copyCSSFile, WAIT_TIME)
+  var debouncedJSCopy = debounce(copyJSFile, WAIT_TIME)
 
   var pageWatcher = fs.watch(PAGES_DIR)
   pageWatcher.on('change', (event, filename) => {
@@ -106,6 +112,13 @@ function main () {
   cssWatcher.on('change', (event, filename) => {
     if (event === 'change') {
       debouncedCSSCopy(filename)
+    }
+  })
+
+  var jsWatcher = fs.watch(JS_DIR)
+  jsWatcher.on('change', (event, filename) => {
+    if (event === 'change') {
+      debouncedJSCopy(filename)
     }
   })
 }
