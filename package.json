@@ -5,6 +5,7 @@
     "start": "npm run watch & live-server dist/",
     "build": "node build.js",
     "deploy": "npm run build && street -ev -b painterbros.com dist/",
+    "deploy-dev": "npm run build && street -ev -b painterbrosdev.com dist/",
     "watch": "node build.js --watch"
   },
   "repository": {

@@ -1,84 +1,151 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    {{> header title="Painter Bros | Home" }}
-  </head>
+    <head>
+        {{> header title="Painter Bros | Home" }}
+    </head>
 
-  <body class="body">
+    <body class="body">
 
-    {{> navbar active='home' }}
+        {{> navbar active='home' }}
 
-    <!-- <div class="welcome-banner">
-      <img src="/img/interior-yellow.jpg" class="hero-image">
-      <div class="welcome-box">
-        <h1>Painter Bros</h1>
-        <div class="hidden-xs" >
-          <p>
-            Our painters are perfect for your next project.
-          </p>
-          <p>
-            Contact us to help you find that perfect look!
-          </p>
-        </div>
-        <a href="/contact.html" class="btn btn-success">Get a Quote!</a>
-      </div>
-    </div> -->
-
-    <div class="container-fluid three-column-section">
-        <div class="row">
-            <div class="col-md-4 left">Section 1</div>
-            <div class="col-md-4 middle">
-                Put jquery slider here. 
+        <div class="container-fluid three-column-section">
+            <div class="row">
+                <div class="left">
+                    <p>Call Painter Bros today to speak with a painter!</p>
+                    <a class="btn btn-success call-btn" href="tel:801-857-5971">Contact Us!</a>
+                </div>
+                <div class="middle">
+                    <img class="center-section-image" src="/img/paint-hero.jpg" alt="Painted room" />
+                    <div class="contact-floater">
+                        <p>Call Painter Bros today to speak with a painter!</p>
+                        <a class="btn btn-success call-btn" href="tel:801-857-5971">Contact Us!</a>
+                    </div>
+                    <div class="hashtag-floater">
+                        <p><a href="needpaintbro.html" class="needpaintbro">#NeedPaintBro</a></p>
+                        {{> social-icons }}
+                    </div>
+                    <!-- <ul class="bxslider">
+                        <li><img src="/img/painter_at_work.png" /></li>
+                        <li><img src="/img/paint-hero.jpg" /></li>
+                        <li><img src="/img/interior-yellow.jpg" /></li>
+                    </ul> -->
+                </div>
+                <div class="right">
+                    <p>
+                        <a href="needpaintbro.html" class="needpaintbro">#NeedPaintBro</a><br>
+                        {{> social-icons }}
+                    </p>
+                </div>
             </div>
-            <div class="col-md-4 right">Section 3</div>
         </div>
-    </div>
 
-    <div class="container-fluid badges-section">
-      <div class="row">
-        <div class="col-md-12 jumbotron">
-          <h2 class="text-center">
-            <a href="contact.html">Call <strong>Painter Bros</strong></a> today to speak to one of our painters!
-          </h2>
+        <div class="container-fluid mobile-callout-section">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>Call Painter Bros today to speak with a painter!</p>
+                    <a class="btn btn-success call-btn" href="tel:801-857-5971">Contact Us!</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <p>
+                        <a href="needpaintbro.html" class="needpaintbro">#NeedPaintBro</a><br>
+                        {{> social-icons }}
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
-      {{> badges}}
-    </div>
 
-    <img src="/img/living-room-colors.jpg" class="hero-image" />
-
-    <div class="container-fluid testimonials" style="padding-top: 20px;">
-      <div class="row">
-        <div class="col-md-12">
-          <blockquote class="text-center">
-            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <br>
-            <em>They were always on time, responsive, clean and extremely professional. Our house looks brand new and we will definitely be calling them again.</em>
-            <footer>
-              Deb Hafner <a href="https://www.google.com/#q=all+american+trade+work">Google Review</a>
-            </footer>
-          </blockquote>
-          <blockquote class="text-center">
-            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <br>
-            <em>I had heard good things about the company, so I referred them to my grandparents. These guys sure didn't disappoint, their workmanship was outstanding.</em>
-            <footer>
-              Brittany A. <a href="http://www.homeadvisor.com/rated.AllAmericanTradeWork.44922682.html#ratingsReviews">HomeAdvisor</a>
-            </footer>
-          </blockquote>
+        <div class="container-fluid testimonials">
+            <div class="row">
+                <h2 class="section-title">Why Painter Bros?</h2>
+            </div>
+            <div class="row">
+                <div class="index-wrapper">
+                    <div class="test-box">
+                        <h3>"Excellent Customer Service"</h3>
+                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        <p class="test-text">
+                            Excellent customer service and painting.  Would love to work with them again.
+                        </p>
+                        <p class="test-person">- Karia Avila</p>
+                        <a class="test-link" target="_blank" href="https://www.google.com/#q=painterbros">Google Review</a>
+                    </div>
+                    <div class="test-box">
+                        <h3>"Outstanding"</h3>
+                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        <p class="test-text">
+                            I had heard good things about the company, so I referred them to my grandparents. These guys sure didn't disappoint,
+                            their workmanship was outstanding.
+                        </p>
+                        <p class="test-person">- Brittany A.</p>
+                        <a class="test-link" target="_blank" href="http://www.homeadvisor.com/rated.AllAmericanTradeWork.44922682.html#ratingsReviews">HomeAdvisor</a>
+                    </div>
+                    <div class="test-box">
+                        <h3>"I Trust Them"</h3>
+                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        <p class="test-text">
+                            Very professional and timely. I am very happy with the colors on the walls and the kitchen cabinets look great.
+                            I trust them and have recommended them to family and friends.
+                        </p>
+                        <p class="test-person">- Corinne Sexsmith</p>
+                        <a class="test-link" target="_blank" href="https://www.google.com/#q=painterbros">Google Review</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
 
-    {{> footer }}
-  </body>
+        {{> locations-section }}
+
+        <div class="container-fluid franchising-section">
+            <div class="row">
+                <h2 class="section-title">Franchising Opportunities</h2>
+            </div>
+            <div class="row">
+                <div class="index-wrapper">
+                    <div class="franchising-photo">
+                        <img src="/img/painter_at_work.png" alt="Our Employees at work" />
+                    </div>
+                    <div class="franchising-blurb">
+                        <p>
+                            Interested in a franchise opportunity? Check out our amazing systems of sales and production, industry leading marketing strategy,
+                            a software built for on the job estimates, and lastly a easily attained web presence that will set you far above the competition.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="franchising-disclaimer">
+                    <h3>Franchise Offering Disclaimer</h3>
+                    <p>
+                        The information on this website is not intended as an offer to sell, or a solicitation of an offer to buy a Painter Bros™
+                        franchise and should be gathered for informational purposes only. Any offer of a Painter Bros™ franchise is made by means
+                        of our Franchise Disclosure Document only. Painter Bros™ franchises are available to qualified prospective franchisees only
+                        in certain states. At this time, we are not registered to make offers or sales in the following states: California, Florida,
+                        Hawaii, Illinois, Indiana, Kentucky, Maryland, Michigan, Minnesota, Nebraska, New York, North Dakota, South Dakota, Rhode Island,
+                        Texas, Utah, Virginia, Washington, and Wisconsin. Additionally, some states may require a licensed contractor to perform certain
+                        services, such as painting. Please check your local area for specific requirements.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        {{> footer }}
+
+        {{> modal }}
+
+    </body>
 </html>
